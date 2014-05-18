@@ -16,7 +16,7 @@ void setup() {
 	// Load the background image
 	backgroundImg = loadImage('pathtofile.png');
 	// Create the speaker (xPos, yPos, width, height, background)
-	speaker = new RiriSpeaker(0,0,width,height,backgroundImage);
+	speaker = new RiriSpeaker(0,0,width,height,backgroundImg);
 }
 
 void draw() {
@@ -26,7 +26,7 @@ void draw() {
 
 void mousePressed() {
 	// Click to set the position of the grpah
-	speaker.setSpeakerSize(speaker.graphWidth);
+	speaker.setSpeakerSize(speaker.graphWidth/2);
 }
 ```
 
